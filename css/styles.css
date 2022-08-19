@@ -87,7 +87,7 @@ img {
 body {
     background-color: var(--global-color);
     font-family: var(--primary-font);
-    margin: 0px;                         ??????????
+    margin: 0px;                        
 }
 
 
@@ -187,9 +187,10 @@ body {
 
     margin-bottom: 94px;
 
-    text-align: center;
-
     height: 600px;
+
+    display: flex;
+    align-items: center;
 }
 
 .hero-title{
@@ -222,6 +223,13 @@ body {
     display: inline-block;
     min-width: 216px;
     border: transparent;
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
 }
 
 .hero-btn:hover,
@@ -245,6 +253,15 @@ body {
     margin-bottom: 10px;
 }
 
+.about-us-menu {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-us-item {
+    flex-basis: calc((100% - 90px)/4);
+}
+
 .about-us-text {
     font-size: 14px;
     line-height: 1.71;
@@ -254,7 +271,7 @@ body {
 }
 
 .about-us {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -274,12 +291,22 @@ body {
     margin-bottom: 50px;
 }
 
+.we-doing-menu {
+    display: flex;
+    column-gap: 30px;
+}
+
+.we-doing-item {
+    flex-basis: calc((100% - 60px) /3 );
+}
+
 .we-doing-img {
     display: block;
 }
 
 .we-doing {
-    margin-bottom: 94px;
+
+    padding-bottom: 94px;
 }
 
 
@@ -288,8 +315,6 @@ body {
 
 .team {
     background-color: #F5F4FA;
-
-
 }
 
 .team-title {
@@ -302,9 +327,26 @@ body {
     color: var(--text-color);
 
     margin-bottom: 50px;
-    padding-top: 94px;    ??????????
-
+    padding-top: 94px;
 }
+
+
+.team-menu {
+    display: flex;
+    column-gap: 30px;
+    padding-bottom: 94px;
+}
+
+
+.team-menu-item {
+    flex-basis: calc((100% - 90px)/4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--global-color);
+}
+
 
 .team-img {
     margin-bottom: 30px;
@@ -329,6 +371,8 @@ body {
     letter-spacing: 0.03em;
 
     color: var(--second-text-color);
+
+    margin-bottom: 30px;
 }
 
 .team-img {
@@ -351,9 +395,12 @@ body {
     display: inline-block;
     margin-top: 60px;
     margin-bottom: 20px;
+    margin-right: 0px;
 }
 
-
+.footer-menu {
+    padding-bottom: 60px;
+}
 
 .footer-adress{
     font-size: 14px;
@@ -405,6 +452,7 @@ body {
 
 .port-header {
     margin-bottom: 94px;
+    border-bottom: 1px solid #ECECEC;;
 }
 
 .nav-btn {
@@ -445,7 +493,22 @@ body {
 /* Блок перелік макетів */
 
 .portfolio {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 60px)/3);
+}
+
+.border {
+    border: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-top: 20px;
+    border-top: transparent;
 }
 
 .portfolio-title {
@@ -467,6 +530,3 @@ body {
     color: var(--second-text-color);
 }
 
-.portfolio-img {
-    margin-bottom: 20px;
-}
