@@ -23,6 +23,7 @@
 
 }
 /* обнулення налащтувань */
+
 h1,
 h2,
 h3,
@@ -33,8 +34,7 @@ p {
     /* outline: 1px solid red; */
 }
 
-ul,
-ol {
+ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -120,6 +120,7 @@ body {
 .page-header {
     padding-top: 25px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo .logo-icon {
@@ -185,12 +186,7 @@ body {
     margin: 0px;
     padding: 0px;
 
-    margin-bottom: 94px;
-
     height: 600px;
-
-    display: flex;
-    align-items: center;
 }
 
 .hero-title{
@@ -203,6 +199,7 @@ body {
 
     color: var(--text-color-while);
 
+    padding-top: 200px;
     margin-bottom: 30px;
 }
 
@@ -272,6 +269,7 @@ body {
 
 .about-us {
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 
