@@ -184,9 +184,11 @@ body {
     background-color: var(--futter-color);
 
     margin: 0px;
-    padding: 0px;
 
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
 }
 
 .hero-title{
@@ -199,8 +201,10 @@ body {
 
     color: var(--text-color-while);
 
-    padding-top: 200px;
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -224,10 +228,6 @@ body {
 
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -300,6 +300,8 @@ body {
 
 .we-doing-img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .we-doing {
@@ -313,6 +315,8 @@ body {
 
 .team {
     background-color: #F5F4FA;
+
+    padding-bottom: 94px;
 }
 
 .team-title {
@@ -332,7 +336,6 @@ body {
 .team-menu {
     display: flex;
     column-gap: 30px;
-    padding-bottom: 94px;
 }
 
 
@@ -346,9 +349,6 @@ body {
 }
 
 
-.team-img {
-    margin-bottom: 30px;
-}
 
 .team-name {
     font-weight: 500;
@@ -360,6 +360,7 @@ body {
     color: var(--text-color);
 
     margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 .team-job {
@@ -370,11 +371,13 @@ body {
 
     color: var(--second-text-color);
 
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .team-img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -383,6 +386,9 @@ body {
 
 .footer {
     background-color: var(--futter-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo.footer-logo {
@@ -391,14 +397,10 @@ body {
 
 .footer-logo {
     display: inline-block;
-    margin-top: 60px;
     margin-bottom: 20px;
     margin-right: 0px;
 }
 
-.footer-menu {
-    padding-bottom: 60px;
-}
 
 .footer-adress{
     font-size: 14px;
@@ -449,7 +451,6 @@ body {
 /* Блок навігації */
 
 .port-header {
-    margin-bottom: 94px;
     border-bottom: 1px solid #ECECEC;;
 }
 
@@ -492,6 +493,7 @@ body {
 
 .portfolio {
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .portfolio-menu {
@@ -505,6 +507,7 @@ body {
     border: 1px solid #EEEEEE;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
     padding-top: 20px;
     border-top: transparent;
 }
@@ -528,3 +531,7 @@ body {
     color: var(--second-text-color);
 }
 
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+}
